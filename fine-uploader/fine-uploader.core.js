@@ -5574,7 +5574,10 @@
             };
         }, parseResponse = function(upload, xhr) {
             var response = {};
-            try {
+            if(xhr.status === 200){
+                return {success : true}
+            }
+             try {
                 log(qq.format("Received response status {} with body: {}", xhr.status, xhr.responseText));
                 response = qq.parseJson(xhr.responseText);
             } catch (error) {

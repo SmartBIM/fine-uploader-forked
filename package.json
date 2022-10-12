@@ -1,5 +1,5 @@
 {
-  "name": "fine-uploader",
+  "name": "@SmartBIM/fine-uploader",
   "title": "Fine Uploader",
   "main": "lib/traditional.js",
   "types" : "typescript/fine-uploader.d.ts",
